@@ -1,4 +1,4 @@
-class ContractEmployee : Employee
+class ContractorEmployee : Employee
 {
 	public string FederalTaxId;
 	
