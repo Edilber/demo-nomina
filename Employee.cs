@@ -17,7 +17,7 @@ class Employee
 	protected int age;
 	protected double payRate;
 	
-	public double CalculatePay(int hoursWorked)
+	public virtual double CalculatePay(int hoursWorked)
 	{
 		//Calcular paga aquí
 		return (payRate * (double)hoursWorked);
