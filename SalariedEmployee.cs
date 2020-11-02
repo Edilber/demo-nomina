@@ -7,7 +7,7 @@ class SalariedEmployee : Employee
 		
 	}
 	
-	public virtual void CalculatePay(int hoursWorked)
+	public override double CalculatePay(int hoursWorked)
 	{
 		//Calcular el pago para el empleado W-2
 		Console.WriteLine("SalariedEmployee.CalculatePay");
