@@ -2,9 +2,16 @@ class SalariedEmployee : Employee
 {
 	public string SocialSecurityNumber;
 	
-	public void CalculatePay(int hoursWorked)
+	public SalariedEmployee(string EmployeeId, string firsName, string lastName, int age, double payRate) : base (EmployeeId, firsName, lastName, age, payRate)
+	{
+		
+	}
+	
+	public virtual void CalculatePay(int hoursWorked)
 	{
 		//Calcular el pago para el empleado W-2
+		Console.WriteLine("SalariedEmployee.CalculatePay");
+		return 42;
 		
 	}
 	
