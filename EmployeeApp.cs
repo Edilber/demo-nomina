@@ -41,7 +41,7 @@ namespace Nomina
 	{
 		public string FederalTaxId;
 		
-		public ContractEmployee(string EmployeeId, string firstName, string lastName, int age, double payRate) : base (EmployeeId, firstName, lastName, age, payRate)
+		public ContractorEmployee(string EmployeeId, string firstName, string lastName, int age, double payRate) : base (EmployeeId, firstName, lastName, age, payRate)
 		{
 			
 		}
