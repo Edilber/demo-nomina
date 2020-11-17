@@ -6,14 +6,30 @@ namespace Nomina
 	{
 		public static void Main()
 		{
-			Employee emp = new Employee("001","Edilber","Pérez",31,200);
-			Console.WriteLine("\nLa paga de Edilber es $" + emp.CalculatePay(40));
+			string nombres;
+			string apellidos;
+			int edad;
+			double sueldo;
+			
+			Console.WriteLine("****Nomina 2020****");
+			Console.WriteLine("\nIngresa el nombre del Empleado");	
+			nombres = Console.ReadLine();
+			Console.WriteLine("\nIngresa sus apellidos");
+			apellidos = Console.ReadLine();
+			Console.WriteLine("\nIntroduce su edad");
+			edad = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine("\nIntroduce su sueldo diario");
+			sueldo = Convert.ToDouble(Console.ReadLine());
+			Employee emp = new Employee("1",nombres,apellidos,edad,sueldo);
+			Console.WriteLine("\nEl sueldo de {0} es ${1}", nombres +" "+apellidos, emp.CalculatePay(8));
 			Console.ReadLine();
 		}
 	}
 	
 	class Employee
 	{
+		public Employee(){}
+		
 		public Employee(string EmployeeId, string firstName, string lastName, int age, double payRate)
 		{
 			this.EmployeeId = EmployeeId;
